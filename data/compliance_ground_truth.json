@@ -1,0 +1,542 @@
+[
+  {
+    "id": "GT_001",
+    "pcap_scenario": "BruteForce-Dictionary attack. src2dst_packets=4, Rolling_SYN=0, unique_ports=235.",
+    "etsi_provision": "5.1",
+    "question": "Does this traffic show evidence of brute-force credential attacks violating ETSI EN 303 645 Provision 5.1 (no universal default passwords)?",
+    "ground_truth": "YES. The traffic shows repeated authentication attempts (src2dst_packets=4) with elevated SYN activity (Rolling_SYN=0), indicating brute-force credential guessing against a device likely using weak or default passwords. This violates Provision 5.1 which requires no universal default passwords and protection against automated guessing.",
+    "attack_class": "BruteForce",
+    "cic_iot2023_label": 7,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 5015.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 4,
+      "src2dst_bytes": 292,
+      "bidirectional_mean_ps": 66.0,
+      "packet_size_variation": 42.0,
+      "Unique_Ports": 235
+    }
+  },
+  {
+    "id": "GT_002",
+    "pcap_scenario": "BruteForce-Dictionary attack. src2dst_packets=14, Rolling_SYN=0, unique_ports=159.",
+    "etsi_provision": "5.1",
+    "question": "Does this traffic show evidence of brute-force credential attacks violating ETSI EN 303 645 Provision 5.1 (no universal default passwords)?",
+    "ground_truth": "YES. The traffic shows repeated authentication attempts (src2dst_packets=14) with elevated SYN activity (Rolling_SYN=0), indicating brute-force credential guessing against a device likely using weak or default passwords. This violates Provision 5.1 which requires no universal default passwords and protection against automated guessing.",
+    "attack_class": "BruteForce",
+    "cic_iot2023_label": 7,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 3446.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 14,
+      "src2dst_bytes": 1092,
+      "bidirectional_mean_ps": 95.4,
+      "packet_size_variation": 39.64845520319802,
+      "Unique_Ports": 159
+    }
+  },
+  {
+    "id": "GT_003",
+    "pcap_scenario": "BruteForce-Dictionary attack. src2dst_packets=5, Rolling_SYN=0, unique_ports=292.",
+    "etsi_provision": "5.1",
+    "question": "Does this traffic show evidence of brute-force credential attacks violating ETSI EN 303 645 Provision 5.1 (no universal default passwords)?",
+    "ground_truth": "YES. The traffic shows repeated authentication attempts (src2dst_packets=5) with elevated SYN activity (Rolling_SYN=0), indicating brute-force credential guessing against a device likely using weak or default passwords. This violates Provision 5.1 which requires no universal default passwords and protection against automated guessing.",
+    "attack_class": "BruteForce",
+    "cic_iot2023_label": 7,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 6152.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 5,
+      "src2dst_bytes": 408,
+      "bidirectional_mean_ps": 75.19999999999999,
+      "packet_size_variation": 48.49742261192856,
+      "Unique_Ports": 292
+    }
+  },
+  {
+    "id": "GT_004",
+    "pcap_scenario": "BruteForce-Dictionary attack. src2dst_packets=8, Rolling_SYN=359, unique_ports=1.",
+    "etsi_provision": "5.1",
+    "question": "Does this traffic show evidence of brute-force credential attacks violating ETSI EN 303 645 Provision 5.1 (no universal default passwords)?",
+    "ground_truth": "YES. The traffic shows repeated authentication attempts (src2dst_packets=8) with elevated SYN activity (Rolling_SYN=359), indicating brute-force credential guessing against a device likely using weak or default passwords. This violates Provision 5.1 which requires no universal default passwords and protection against automated guessing.",
+    "attack_class": "BruteForce",
+    "cic_iot2023_label": 7,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 359.0,
+      "Rolling_ACK_Sum": 4327.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 8,
+      "src2dst_bytes": 844,
+      "bidirectional_mean_ps": 89.6,
+      "packet_size_variation": 41.376321731154405,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_005",
+    "pcap_scenario": "BruteForce-Dictionary attack. src2dst_packets=6, Rolling_SYN=80, unique_ports=1.",
+    "etsi_provision": "5.1",
+    "question": "Does this traffic show evidence of brute-force credential attacks violating ETSI EN 303 645 Provision 5.1 (no universal default passwords)?",
+    "ground_truth": "YES. The traffic shows repeated authentication attempts (src2dst_packets=6) with elevated SYN activity (Rolling_SYN=80), indicating brute-force credential guessing against a device likely using weak or default passwords. This violates Provision 5.1 which requires no universal default passwords and protection against automated guessing.",
+    "attack_class": "BruteForce",
+    "cic_iot2023_label": 7,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 80.0,
+      "Rolling_ACK_Sum": 307.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 6,
+      "src2dst_bytes": 396,
+      "bidirectional_mean_ps": 142.8,
+      "packet_size_variation": 396.95339776855417,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_006",
+    "pcap_scenario": "Web-based attack (XSS/SQLi/CommandInject). src2dst_packets=20, bidirectional_mean_ps=28.0.",
+    "etsi_provision": "5.3",
+    "question": "Does the HTTP traffic indicate exploitation of unpatched vulnerabilities per ETSI EN 303 645 Provision 5.3 (keep software updated)?",
+    "ground_truth": "YES. The HTTP traffic patterns (bidirectional_mean_ps=28.0, src2dst_packets=20) indicate injection attempts against a web interface, suggesting the target device runs unpatched or vulnerable software. This violates Provision 5.3 which requires IoT devices to keep software updated and secure.",
+    "attack_class": "WebBased",
+    "cic_iot2023_label": 6,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 560,
+      "bidirectional_mean_ps": 28.0,
+      "packet_size_variation": 16.165807537309522,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_007",
+    "pcap_scenario": "Web-based attack (XSS/SQLi/CommandInject). src2dst_packets=20, bidirectional_mean_ps=28.0.",
+    "etsi_provision": "5.3",
+    "question": "Does the HTTP traffic indicate exploitation of unpatched vulnerabilities per ETSI EN 303 645 Provision 5.3 (keep software updated)?",
+    "ground_truth": "YES. The HTTP traffic patterns (bidirectional_mean_ps=28.0, src2dst_packets=20) indicate injection attempts against a web interface, suggesting the target device runs unpatched or vulnerable software. This violates Provision 5.3 which requires IoT devices to keep software updated and secure.",
+    "attack_class": "WebBased",
+    "cic_iot2023_label": 6,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 560,
+      "bidirectional_mean_ps": 28.0,
+      "packet_size_variation": 16.165807537309522,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_008",
+    "pcap_scenario": "Web-based attack (XSS/SQLi/CommandInject). src2dst_packets=20, bidirectional_mean_ps=28.0.",
+    "etsi_provision": "5.3",
+    "question": "Does the HTTP traffic indicate exploitation of unpatched vulnerabilities per ETSI EN 303 645 Provision 5.3 (keep software updated)?",
+    "ground_truth": "YES. The HTTP traffic patterns (bidirectional_mean_ps=28.0, src2dst_packets=20) indicate injection attempts against a web interface, suggesting the target device runs unpatched or vulnerable software. This violates Provision 5.3 which requires IoT devices to keep software updated and secure.",
+    "attack_class": "WebBased",
+    "cic_iot2023_label": 6,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 560,
+      "bidirectional_mean_ps": 28.0,
+      "packet_size_variation": 16.165807537309522,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_009",
+    "pcap_scenario": "Web-based attack (XSS/SQLi/CommandInject). src2dst_packets=20, bidirectional_mean_ps=28.0.",
+    "etsi_provision": "5.3",
+    "question": "Does the HTTP traffic indicate exploitation of unpatched vulnerabilities per ETSI EN 303 645 Provision 5.3 (keep software updated)?",
+    "ground_truth": "YES. The HTTP traffic patterns (bidirectional_mean_ps=28.0, src2dst_packets=20) indicate injection attempts against a web interface, suggesting the target device runs unpatched or vulnerable software. This violates Provision 5.3 which requires IoT devices to keep software updated and secure.",
+    "attack_class": "WebBased",
+    "cic_iot2023_label": 6,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 560,
+      "bidirectional_mean_ps": 28.0,
+      "packet_size_variation": 16.165807537309522,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_010",
+    "pcap_scenario": "Web-based attack (XSS/SQLi/CommandInject). src2dst_packets=20, bidirectional_mean_ps=28.0.",
+    "etsi_provision": "5.3",
+    "question": "Does the HTTP traffic indicate exploitation of unpatched vulnerabilities per ETSI EN 303 645 Provision 5.3 (keep software updated)?",
+    "ground_truth": "YES. The HTTP traffic patterns (bidirectional_mean_ps=28.0, src2dst_packets=20) indicate injection attempts against a web interface, suggesting the target device runs unpatched or vulnerable software. This violates Provision 5.3 which requires IoT devices to keep software updated and secure.",
+    "attack_class": "WebBased",
+    "cic_iot2023_label": 6,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 560,
+      "bidirectional_mean_ps": 28.0,
+      "packet_size_variation": 16.165807537309522,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_011",
+    "pcap_scenario": "Spoofing attack (ARP/DNS). src2dst_packets=20, packet_size_variation=311.77.",
+    "etsi_provision": "5.5",
+    "question": "Is there evidence of communication interception or manipulation violating ETSI EN 303 645 Provision 5.5 (communicate securely)?",
+    "ground_truth": "YES. The traffic exhibits spoofing behaviour with packet_size_variation=311.77 and 20 packets, indicating manipulation of network-layer identity resolution. This undermines secure communication and violates Provision 5.5 which requires encrypted and authenticated communications.",
+    "attack_class": "Spoofing",
+    "cic_iot2023_label": 4,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 350.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 10800,
+      "bidirectional_mean_ps": 540.0,
+      "packet_size_variation": 311.7691453623979,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_012",
+    "pcap_scenario": "Spoofing attack (ARP/DNS). src2dst_packets=20, packet_size_variation=311.77.",
+    "etsi_provision": "5.5",
+    "question": "Is there evidence of communication interception or manipulation violating ETSI EN 303 645 Provision 5.5 (communicate securely)?",
+    "ground_truth": "YES. The traffic exhibits spoofing behaviour with packet_size_variation=311.77 and 20 packets, indicating manipulation of network-layer identity resolution. This undermines secure communication and violates Provision 5.5 which requires encrypted and authenticated communications.",
+    "attack_class": "Spoofing",
+    "cic_iot2023_label": 4,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 71.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 10800,
+      "bidirectional_mean_ps": 540.0,
+      "packet_size_variation": 311.7691453623979,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_013",
+    "pcap_scenario": "Spoofing attack (ARP/DNS). src2dst_packets=20, packet_size_variation=311.77.",
+    "etsi_provision": "5.5",
+    "question": "Is there evidence of communication interception or manipulation violating ETSI EN 303 645 Provision 5.5 (communicate securely)?",
+    "ground_truth": "YES. The traffic exhibits spoofing behaviour with packet_size_variation=311.77 and 20 packets, indicating manipulation of network-layer identity resolution. This undermines secure communication and violates Provision 5.5 which requires encrypted and authenticated communications.",
+    "attack_class": "Spoofing",
+    "cic_iot2023_label": 4,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 350.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 10800,
+      "bidirectional_mean_ps": 540.0,
+      "packet_size_variation": 311.7691453623979,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_014",
+    "pcap_scenario": "Spoofing attack (ARP/DNS). src2dst_packets=20, packet_size_variation=311.77.",
+    "etsi_provision": "5.5",
+    "question": "Is there evidence of communication interception or manipulation violating ETSI EN 303 645 Provision 5.5 (communicate securely)?",
+    "ground_truth": "YES. The traffic exhibits spoofing behaviour with packet_size_variation=311.77 and 20 packets, indicating manipulation of network-layer identity resolution. This undermines secure communication and violates Provision 5.5 which requires encrypted and authenticated communications.",
+    "attack_class": "Spoofing",
+    "cic_iot2023_label": 4,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 350.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 10800,
+      "bidirectional_mean_ps": 540.0,
+      "packet_size_variation": 311.7691453623979,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_015",
+    "pcap_scenario": "Spoofing attack (ARP/DNS). src2dst_packets=20, packet_size_variation=311.77.",
+    "etsi_provision": "5.5",
+    "question": "Is there evidence of communication interception or manipulation violating ETSI EN 303 645 Provision 5.5 (communicate securely)?",
+    "ground_truth": "YES. The traffic exhibits spoofing behaviour with packet_size_variation=311.77 and 20 packets, indicating manipulation of network-layer identity resolution. This undermines secure communication and violates Provision 5.5 which requires encrypted and authenticated communications.",
+    "attack_class": "Spoofing",
+    "cic_iot2023_label": 4,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 350.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 10800,
+      "bidirectional_mean_ps": 540.0,
+      "packet_size_variation": 311.7691453623979,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_016",
+    "pcap_scenario": "Reconnaissance scan (PortScan/OSScan/PingSweep). Rolling_SYN=458, unique_ports=1, src2dst_packets=1.",
+    "etsi_provision": "5.6",
+    "question": "Does the scanning traffic indicate excessive exposed attack surfaces violating ETSI EN 303 645 Provision 5.6 (minimise exposed attack surfaces)?",
+    "ground_truth": "YES. The scanning traffic shows Rolling_SYN=458 across 1 unique ports with only 1 packets per flow, indicating systematic probing of exposed services. This violates Provision 5.6 which requires minimising exposed attack surfaces.",
+    "attack_class": "Recon",
+    "cic_iot2023_label": 5,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 458.0,
+      "Rolling_ACK_Sum": 108.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 1,
+      "src2dst_bytes": 40,
+      "bidirectional_mean_ps": 40.0,
+      "packet_size_variation": 23.09401076758504,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_017",
+    "pcap_scenario": "Reconnaissance scan (PortScan/OSScan/PingSweep). Rolling_SYN=550, unique_ports=1, src2dst_packets=1.",
+    "etsi_provision": "5.6",
+    "question": "Does the scanning traffic indicate excessive exposed attack surfaces violating ETSI EN 303 645 Provision 5.6 (minimise exposed attack surfaces)?",
+    "ground_truth": "YES. The scanning traffic shows Rolling_SYN=550 across 1 unique ports with only 1 packets per flow, indicating systematic probing of exposed services. This violates Provision 5.6 which requires minimising exposed attack surfaces.",
+    "attack_class": "Recon",
+    "cic_iot2023_label": 5,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 550.0,
+      "Rolling_ACK_Sum": 199.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 1,
+      "src2dst_bytes": 40,
+      "bidirectional_mean_ps": 40.0,
+      "packet_size_variation": 23.09401076758504,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_018",
+    "pcap_scenario": "Reconnaissance scan (PortScan/OSScan/PingSweep). Rolling_SYN=397, unique_ports=1, src2dst_packets=1.",
+    "etsi_provision": "5.6",
+    "question": "Does the scanning traffic indicate excessive exposed attack surfaces violating ETSI EN 303 645 Provision 5.6 (minimise exposed attack surfaces)?",
+    "ground_truth": "YES. The scanning traffic shows Rolling_SYN=397 across 1 unique ports with only 1 packets per flow, indicating systematic probing of exposed services. This violates Provision 5.6 which requires minimising exposed attack surfaces.",
+    "attack_class": "Recon",
+    "cic_iot2023_label": 5,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 397.0,
+      "Rolling_ACK_Sum": 47.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 1,
+      "src2dst_bytes": 40,
+      "bidirectional_mean_ps": 40.0,
+      "packet_size_variation": 23.09401076758504,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_019",
+    "pcap_scenario": "Reconnaissance scan (PortScan/OSScan/PingSweep). Rolling_SYN=398, unique_ports=1, src2dst_packets=1.",
+    "etsi_provision": "5.6",
+    "question": "Does the scanning traffic indicate excessive exposed attack surfaces violating ETSI EN 303 645 Provision 5.6 (minimise exposed attack surfaces)?",
+    "ground_truth": "YES. The scanning traffic shows Rolling_SYN=398 across 1 unique ports with only 1 packets per flow, indicating systematic probing of exposed services. This violates Provision 5.6 which requires minimising exposed attack surfaces.",
+    "attack_class": "Recon",
+    "cic_iot2023_label": 5,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 398.0,
+      "Rolling_ACK_Sum": 48.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 1,
+      "src2dst_bytes": 40,
+      "bidirectional_mean_ps": 40.0,
+      "packet_size_variation": 23.09401076758504,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_020",
+    "pcap_scenario": "Reconnaissance scan (PortScan/OSScan/PingSweep). Rolling_SYN=350, unique_ports=1, src2dst_packets=1.",
+    "etsi_provision": "5.6",
+    "question": "Does the scanning traffic indicate excessive exposed attack surfaces violating ETSI EN 303 645 Provision 5.6 (minimise exposed attack surfaces)?",
+    "ground_truth": "YES. The scanning traffic shows Rolling_SYN=350 across 1 unique ports with only 1 packets per flow, indicating systematic probing of exposed services. This violates Provision 5.6 which requires minimising exposed attack surfaces.",
+    "attack_class": "Recon",
+    "cic_iot2023_label": 5,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 350.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 1,
+      "src2dst_bytes": 40,
+      "bidirectional_mean_ps": 40.0,
+      "packet_size_variation": 23.09401076758504,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_021",
+    "pcap_scenario": "Backdoor/Malware compromise. Rolling_SYN=10, src2dst_bytes=3761, Rolling_ACK=355.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "YES. The traffic shows persistent C2-like patterns with Rolling_SYN=10, Rolling_ACK=355, and 3761 bytes transferred, indicating a compromised device communicating with a controller. This violates Provision 5.7 which requires software integrity and secure operation.",
+    "attack_class": "Backdoor",
+    "cic_iot2023_label": 1,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 10.0,
+      "Rolling_ACK_Sum": 355.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 10,
+      "src2dst_bytes": 3761,
+      "bidirectional_mean_ps": 279.52631578947364,
+      "packet_size_variation": 459.0980287476739,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_022",
+    "pcap_scenario": "Backdoor/Malware compromise. Rolling_SYN=0, src2dst_bytes=760, Rolling_ACK=440.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "YES. The traffic shows persistent C2-like patterns with Rolling_SYN=0, Rolling_ACK=440, and 760 bytes transferred, indicating a compromised device communicating with a controller. This violates Provision 5.7 which requires software integrity and secure operation.",
+    "attack_class": "Backdoor",
+    "cic_iot2023_label": 1,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 440.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 19,
+      "src2dst_bytes": 760,
+      "bidirectional_mean_ps": 111.6,
+      "packet_size_variation": 826.7655854795441,
+      "Unique_Ports": 1
+    }
+  },
+  {
+    "id": "GT_023",
+    "pcap_scenario": "DDoS volumetric flood. Rolling_SYN=350, src2dst_packets=1, bidirectional_mean_ps=42.0.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "YES. The volumetric SYN flood shows Rolling_SYN=350 with mean packet size 42.0, overwhelming the target device. This violates Provision 5.7 which requires IoT devices to maintain resilience against denial-of-service conditions.",
+    "attack_class": "DDoS",
+    "cic_iot2023_label": 3,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 350.0,
+      "Rolling_ACK_Sum": 350.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 1,
+      "src2dst_bytes": 44,
+      "bidirectional_mean_ps": 42.0,
+      "packet_size_variation": 2.309401076758503,
+      "Unique_Ports": 350
+    }
+  },
+  {
+    "id": "GT_024",
+    "pcap_scenario": "DDoS volumetric flood. Rolling_SYN=352, src2dst_packets=1, bidirectional_mean_ps=42.0.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "YES. The volumetric SYN flood shows Rolling_SYN=352 with mean packet size 42.0, overwhelming the target device. This violates Provision 5.7 which requires IoT devices to maintain resilience against denial-of-service conditions.",
+    "attack_class": "DDoS",
+    "cic_iot2023_label": 3,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 352.0,
+      "Rolling_ACK_Sum": 350.0,
+      "Rolling_UDP_Sum": 0.0,
+      "src2dst_packets": 1,
+      "src2dst_bytes": 40,
+      "bidirectional_mean_ps": 42.0,
+      "packet_size_variation": 2.309401076758503,
+      "Unique_Ports": 5
+    }
+  },
+  {
+    "id": "GT_025",
+    "pcap_scenario": "DoS attack. Rolling_SYN=0, src2dst_packets=20.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "YES. The denial-of-service traffic shows Rolling_SYN=0 and 20 packets directed at a single target, degrading availability. This violates Provision 5.7 which requires resilience against denial-of-service attacks.",
+    "attack_class": "DoS",
+    "cic_iot2023_label": 2,
+    "strategy_b_features": {
+      "Rolling_SYN_Sum": 0.0,
+      "Rolling_ACK_Sum": 0.0,
+      "Rolling_UDP_Sum": 61.0,
+      "src2dst_packets": 20,
+      "src2dst_bytes": 6521,
+      "bidirectional_mean_ps": 326.05,
+      "packet_size_variation": 188.54066758482992,
+      "Unique_Ports": 31
+    }
+  },
+  {
+    "id": "GT_026",
+    "pcap_scenario": "Benign traffic baseline. src2dst_packets=1, bidirectional_mean_ps=216.0.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "NO. The traffic exhibits normal operational patterns with no indicators of compromise, scanning, or attack. There is no evidence of violation of ETSI EN 303 645 provisions.",
+    "attack_class": "Benign",
+    "cic_iot2023_label": 0,
+    "strategy_b_features": {
+      "src2dst_packets": 1,
+      "bidirectional_mean_ps": 216.0
+    }
+  },
+  {
+    "id": "GT_027",
+    "pcap_scenario": "Benign traffic baseline. src2dst_packets=3, bidirectional_mean_ps=75.3.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "NO. The traffic exhibits normal operational patterns with no indicators of compromise, scanning, or attack. There is no evidence of violation of ETSI EN 303 645 provisions.",
+    "attack_class": "Benign",
+    "cic_iot2023_label": 0,
+    "strategy_b_features": {
+      "src2dst_packets": 3,
+      "bidirectional_mean_ps": 75.33333333333333
+    }
+  },
+  {
+    "id": "GT_028",
+    "pcap_scenario": "Benign traffic baseline. src2dst_packets=13, bidirectional_mean_ps=1340.8.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "NO. The traffic exhibits normal operational patterns with no indicators of compromise, scanning, or attack. There is no evidence of violation of ETSI EN 303 645 provisions.",
+    "attack_class": "Benign",
+    "cic_iot2023_label": 0,
+    "strategy_b_features": {
+      "src2dst_packets": 13,
+      "bidirectional_mean_ps": 1340.75
+    }
+  },
+  {
+    "id": "GT_029",
+    "pcap_scenario": "Benign traffic baseline. src2dst_packets=2, bidirectional_mean_ps=216.0.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "NO. The traffic exhibits normal operational patterns with no indicators of compromise, scanning, or attack. There is no evidence of violation of ETSI EN 303 645 provisions.",
+    "attack_class": "Benign",
+    "cic_iot2023_label": 0,
+    "strategy_b_features": {
+      "src2dst_packets": 2,
+      "bidirectional_mean_ps": 216.0
+    }
+  },
+  {
+    "id": "GT_030",
+    "pcap_scenario": "Benign traffic baseline. src2dst_packets=20, bidirectional_mean_ps=2296.4.",
+    "etsi_provision": "5.7",
+    "question": "Does this traffic show signs of malware compromise or DoS attack violating ETSI EN 303 645 Provision 5.7 (ensure software integrity / DoS resilience)?",
+    "ground_truth": "NO. The traffic exhibits normal operational patterns with no indicators of compromise, scanning, or attack. There is no evidence of violation of ETSI EN 303 645 provisions.",
+    "attack_class": "Benign",
+    "cic_iot2023_label": 0,
+    "strategy_b_features": {
+      "src2dst_packets": 20,
+      "bidirectional_mean_ps": 2296.4000000000005
+    }
+  }
+]
