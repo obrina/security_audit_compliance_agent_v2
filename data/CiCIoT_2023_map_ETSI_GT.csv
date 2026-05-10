@@ -1,0 +1,9 @@
+Attack Category (CICIoT 2023),GT Identifiers,Primary ETSI EN 303 645 Provision
+BruteForce Dictionary,"GT-08, GT-24",5.1: No universal default passwords (requires brute-force resistance).
+XSS / SQLi / Uploading,"GT-01, 16, 03, 19, 02, 18",5.13: Validate input data (prevents code/command injection).
+Host Discovery / Recon,"GT-04, 10, 20, 27",5.6: Minimize exposed attack surfaces (reducing visibility to scanners).
+DNS/ARP Spoofing,"GT-07, 23, 05, 11, 12, 21",5.5: Communicate securely (requires integrity/authentication of traffic).
+DoS / DDoS,"GT-14 (DoS), 15, 30, 09, 25, 26",5.9: Make systems resilient to outages (ensuring availability during floods).
+Session Hijacking,"GT-13, GT-28",5.5: Communicate securely (protecting session tokens/confidentiality).
+C2 Data Exfiltration,"GT-17, GT-29",5.10 / 6.1: Examine telemetry / Personal data security (monitoring for data theft).
+Mirai (Botnet/Malware),"GT-06, GT-22",5.7: Ensure software integrity (preventing unauthorized code execution).
