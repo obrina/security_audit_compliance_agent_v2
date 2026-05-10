@@ -13,7 +13,6 @@ The dataset is publicly available at:
 
 After downloading, you need:
 - `df_class_8_test.csv` (167MB) - Test set with 25,557 flows, available from [my gdrive](https://tinyurl.com/obrina)
-- `df_class_8_train.csv` (981MB) - Training set (optional, only for GNN4ID)
 
 Place these files in a `dataset/` directory at the repository root.
 
