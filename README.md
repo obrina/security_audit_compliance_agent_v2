@@ -86,12 +86,11 @@ saca-iot-compliance/
 ### Prerequisites
 
 - Python 3.10+
-- Neo4j 5.0+ (for Graph RAG experiment)
-- NVIDIA GPU with CUDA (optional, for local LLMs)
-- API keys for:
+- Neo4j 5.0+ (for Graph RAG)
+- NVIDIA GPU with CUDA at least 12GB VRAM for 8B model (for local LLMs)
+- API keys (optional, for fallback):
   - OpenRouter (DeepSeek-R1, Qwen-2.5, Llama-3.2)
-  - OpenAI (GPT-4o-mini)
-  - Google AI Studio (Gemini 2.5 Flash for RAGAS)
+  - OpenAI (GPT-4o-mini for RAGAS LLM-as-judge)
 
 ### Installation
 
