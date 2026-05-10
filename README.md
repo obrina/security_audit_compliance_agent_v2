@@ -148,8 +148,8 @@ python figure_3_precision_recall.py
 See [`docs/REPRODUCTION_GUIDE.md`](docs/REPRODUCTION_GUIDE.md) for detailed step-by-step instructions to reproduce all experiments, figures, and statistical analyses from the paper.
 
 Expected runtime:
-- Experiment 5 (Heuristic): ~2 hours (150 evaluations)
-- Experiment 2 (Vector RAG): ~3 hours (150 evaluations)
+- Experiment 5 (Heuristic): ~2 hours (120 evaluations)
+- Experiment 2 (Vector RAG): ~3 hours (120 evaluations)
 - Experiment 3 (Graph RAG): ~2.5 hours (120 evaluations)
 
 ---
