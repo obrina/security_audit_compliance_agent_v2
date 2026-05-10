@@ -211,7 +211,7 @@ For questions about the paper or code, please open an issue on GitHub or contact
 - **CIC-IoT2023 Dataset:** Canadian Institute for Cybersecurity, University of New Brunswick
 - **LightRAG Framework:** HKUST-KnowComp
 - **RAGAS Metrics:** Explodinggradients
-- **Funding:** [Add funding sources if applicable]
+- **Funding:** LPDP Indonesia
 
 ---
 
