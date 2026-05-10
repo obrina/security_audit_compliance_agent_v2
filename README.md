@@ -116,7 +116,7 @@ cp .env.example .env
 The CIC-IoT2023 dataset is not included due to size. Download from:
 https://www.unb.ca/cic/datasets/iotdataset-2023.html
 
-Place `df_class_8_test.csv` in `dataset/` directory.
+Due to file size, `df_class_8_test.csv` can be downloaded from google drive https://tinyurl.com/obrina Place `df_class_8_test.csv` in `dataset/` directory.
 
 ### Run Experiments
 
