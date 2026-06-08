@@ -4,8 +4,7 @@ Official code repository for the paper:
 **"Towards Responsible AI for IoT Network Security Auditing using Knowledge Graph and RAGAS"**
 
 *Obrina Briliyant, Amir Javed, Yulia Cherdantseva*  
-School of Computer Science and Informatics, Cardiff University, UK; and
-
+School of Computer Science and Informatics, Cardiff University, UK.
 Rekayasa Keamanan Siber, Politeknik Siber dan Sandi Negara, Indonesia.
 
 Briliyant, O., Javed, A., & Cherdantseva, Y. (2026). Towards Responsible AI for IoT Network Security Auditing Using Knowledge Graph and RAGAS. Journal of Cybersecurity and Privacy, 6(3), 98. https://doi.org/10.3390/jcp6030098
