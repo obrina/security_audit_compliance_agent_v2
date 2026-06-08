@@ -10,7 +10,7 @@ Rekayasa Keamanan Siber, Politeknik Siber dan Sandi Negara, Indonesia.
 Briliyant, O., Javed, A., & Cherdantseva, Y. (2026). Towards Responsible AI for IoT Network Security Auditing Using Knowledge Graph and RAGAS. Journal of Cybersecurity and Privacy, 6(3), 98. https://doi.org/10.3390/jcp6030098
 
 📄 **Published in:** MDPI Journal of Cybersecurity and Privacy [pending]  
-🔗 **Paper:** [Towards Responsible AI for IoT Network Security Auditing -- Briliyant et al.](https://doi.org/10.3390/jcp6030098) 
+🔗 **Paper:** [Towards Responsible AI for IoT Network Security Auditing - Briliyant et al.](https://doi.org/10.3390/jcp6030098) 
 📊 **Dataset:** [CIC-IoT2023](https://www.unb.ca/cic/datasets/iotdataset-2023.html)
 
 ---
@@ -173,7 +173,7 @@ Expected runtime:
 
 ## 📖 Citation
 
-If you use this code or dataset in your research, please cite:
+If you use this code or data in your research, please cite:
 
 ```bibtex
 @article{briliyant2026saca,
@@ -193,7 +193,7 @@ If you use this code or dataset in your research, please cite:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
@@ -204,7 +204,7 @@ School of Computer Science and Informatics
 Cardiff University, UK  
 Rekayasa Keamanan Siber  
 Poltek SSN, Indonesia  
-Email: BriliyantO@cardiff.ac.uk -- Obrina@poltekssn.ac.id
+Email: BriliyantOC@cardiff.ac.uk - Obrina@poltekssn.ac.id
 
 For questions about the paper or code, please open an issue on GitHub or contact the authors directly.
 
@@ -219,14 +219,14 @@ For questions about the paper or code, please open an issue on GitHub or contact
 
 ---
 
-## 📝 Notes for Reviewers
+## 📝 Notes for Readers
 
 This repository contains all code, data, and documentation to reproduce the results presented in our manuscript. We provide:
 
 1. ✅ Complete experimental pipeline (3 retrieval methods)
 2. ✅ Ground truth annotations (30 scenarios, validated)
 3. ✅ Raw experimental results (filtered CSVs)
-4. ✅ Visualization code (publication-ready figures)
+4. ✅ Visualization code generated using GenAI DeepSeek v4 (publication-ready figures)
 5. ✅ SACA prototype (web interface with Neo4j)
 6. ✅ Detailed methodology documentation
 
