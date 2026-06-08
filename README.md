@@ -5,7 +5,7 @@ Official code repository for the paper:
 **"Towards Responsible AI for IoT Network Security Auditing using Knowledge Graphs and RAGAS"**
 
 *Obrina Briliyant, Amir Javed, Yulia Cherdantseva*  
-School of Computer Science and Informatics, Cardiff University, UK.
+School of Computer Science and Informatics, Cardiff University, UK; and 
 Rekayasa Keamanan Siber, Politeknik Siber dan Sandi Negara, Indonesia.
 Briliyant, O., Javed, A., & Cherdantseva, Y. (2026). Towards Responsible AI for IoT Network Security Auditing Using Knowledge Graph and RAGAS. Journal of Cybersecurity and Privacy, 6(3), 98. https://doi.org/10.3390/jcp6030098
 
@@ -88,7 +88,7 @@ saca-iot-compliance/
 ### Prerequisites
 
 - Python 3.10+
-- Neo4j 5.0+ (for Graph RAG)
+- Neo4j & NetworkX (for Graph RAG)
 - NVIDIA GPU with CUDA at least 12GB VRAM for 8B model (for local LLMs)
 - API keys (optional, for fallback):
   - OpenRouter (DeepSeek-R1, Qwen-2.5, Llama-3.2)
@@ -201,8 +201,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Obrina Briliyant**  
 School of Computer Science and Informatics  
-Cardiff University  
-Email: BriliyantO@cardiff.ac.uk
+Cardiff University, UK  
+Rekayasa Keamanan Siber  
+Poltek SSN, Indonesia  
+Email: BriliyantO@cardiff.ac.uk -- Obrina@poltekssn.ac.id
 
 For questions about the paper or code, please open an issue on GitHub or contact the authors directly.
 
