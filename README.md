@@ -1,4 +1,4 @@
-# Towards Responsible AI for IoT Network Security Auditing using Knowledge Graph and RAGAS
+# Towards Responsible AI for IoT Network Security Auditing
 Official code repository for the paper:
 
 **"Towards Responsible AI for IoT Network Security Auditing using Knowledge Graph and RAGAS"**
