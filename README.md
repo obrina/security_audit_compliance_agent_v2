@@ -11,7 +11,7 @@ Briliyant, O., Javed, A., & Cherdantseva, Y. (2026). Towards Responsible AI for 
 
 For the complete SACA Prototype Repository, please visit [Security Audit Compliance Agent v.14](https://github.com/obrina/security-audit-compliance-agent-v.14)
 
-📄 **Published in:** MDPI Journal of Cybersecurity and Privacy [pending]  
+📄 **Published in:** MDPI Journal of Cybersecurity and Privacy [JCP]  
 🔗 **Paper:** [Towards Responsible AI for IoT Network Security Auditing - Briliyant et al.](https://doi.org/10.3390/jcp6030098) 
 📊 **Dataset:** [CIC-IoT2023](https://www.unb.ca/cic/datasets/iotdataset-2023.html)
 
